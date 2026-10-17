@@ -1,5 +1,5 @@
 ---
-title: "Help Center AI-Readiness Audit: A Checklist for Support"
+title: "Help Center AI-Readiness Audit Checklist"
 description: "A pass/fail checklist to test whether your help center lets an AI agent find the right answer, and what to fix first when it can't."
 last_modified_at: 2026-10-17
 tags: [knowledge, QA, agent assist]

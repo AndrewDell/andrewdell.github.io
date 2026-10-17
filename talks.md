@@ -1,5 +1,5 @@
 ---
-title: "Talks, Podcasts and Mentions | Andrew Dell, Support Ops"
+title: "Talks, Podcasts and Mentions on AI in Support"
 description: "Webinars, podcasts, customer stories and volunteer work featuring Andrew Dell, Support Operations Architect, on AI in customer support operations."
 last_modified_at: 2026-10-17
 ---

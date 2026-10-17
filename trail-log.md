@@ -1,5 +1,5 @@
 ---
-title: "Trail Log: Hikes and SCORE Mentoring | Andrew Dell"
+title: "Trail Log: Hikes, Service Events and SCORE"
 description: "Dated notes from Andrew Dell outside work: Outdoorsy Adventure Team hikes and service events, and volunteer small-business mentoring with SCORE."
 last_modified_at: 2026-10-17
 ---

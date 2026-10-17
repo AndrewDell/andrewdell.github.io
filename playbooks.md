@@ -1,5 +1,5 @@
 ---
-title: "Free Playbooks for Support Operations Teams | Andrew Dell"
+title: "Free Playbooks for Support Operations Teams"
 description: "Free, ungated checklists and templates for support ops and CX teams running AI agents, from Andrew Dell. Free to use and adapt under CC BY 4.0."
 last_modified_at: 2026-10-17
 ---

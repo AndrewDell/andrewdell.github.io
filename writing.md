@@ -1,5 +1,5 @@
 ---
-title: "Writing on AI in Customer Support | Andrew Dell"
+title: "Writing on AI in Customer Support Operations"
 description: "Posts and newsletter issues from Andrew Dell on AI agents, knowledge bases, escalations and support operations, with real examples and numbers."
 last_modified_at: 2026-10-17
 ---

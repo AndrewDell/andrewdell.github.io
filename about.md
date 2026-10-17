@@ -1,5 +1,5 @@
 ---
-title: "About Andrew Dell, Support Operations Architect"
+title: "About: Support Operations and AI in Support"
 description: "Andrew Dell is a Support Operations Architect in Saint Augustine, FL who has run three generations of production AI in customer support since 2022."
 last_modified_at: 2026-10-17
 ---

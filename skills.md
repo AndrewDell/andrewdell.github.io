@@ -1,5 +1,5 @@
 ---
-title: "Claude Skills for Support Operations Teams | Andrew Dell"
+title: "Claude Skills for Support Operations Teams"
 description: "Claude skills Andrew Dell is preparing to share with support teams: what each does for a support team, how to install it, and what it never does."
 last_modified_at: 2026-10-17
 ---

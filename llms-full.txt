@@ -2,19 +2,45 @@
 layout: null
 permalink: /llms-full.txt
 ---
-# {{ site.data.profile.name }}: full site text
+{%- assign p = site.data.profile -%}
+# {{ p.name }}: full site text
 Source: {{ site.url }} · Generated {{ site.time | date: "%Y-%m-%d" }}
 
-{% assign pages_in = "/about/,/playbooks/,/skills/,/talks/,/trail-log/" | split: "," %}{% for url in pages_in %}{% assign pg = site.pages | where: "url", url | first %}{% if pg %}
----
-URL: {{ pg.url | absolute_url }}
-{{ pg.content | markdownify | strip_html | normalize_whitespace }}
-{% endif %}{% endfor %}{% for doc in site.playbooks %}
----
-URL: {{ doc.url | absolute_url }} (CC BY 4.0)
-{{ doc.content }}
-{% endfor %}{% for doc in site.trail %}
----
-URL: {{ doc.url | absolute_url }}
-{{ doc.content }}
+## Who
+{{ p.name }}, {{ p.job_title }}. {{ p.one_liner }} Location: {{ p.location }}.
+
+## At a glance
+{% for g in p.at_a_glance %}- {{ g.label }}: {{ g.value }}
 {% endfor %}
+## Results from real deployments
+{% for r in p.results %}- {{ r.number }}: {{ r.label }}
+{% endfor %}
+## About
+URL: {{ site.url }}/about/
+{% assign about = site.pages | where: "url", "/about/" | first %}{{ about.content | markdownify | strip_html | normalize_whitespace }}
+
+## Talks and mentions
+URL: {{ site.url }}/talks/
+{% for m in site.data.mentions %}- {{ m.date }} · {{ m.kind }} · {{ m.title }} ({{ m.host }}): {{ m.detail }}{% if m.url != "" %} {{ m.url }}{% endif %}
+{% endfor %}
+## Playbooks (CC BY 4.0)
+{% for doc in site.playbooks %}
+### {{ doc.title }}
+URL: {{ doc.url | absolute_url }}
+{{ doc.content | strip_html }}
+{% endfor %}
+## Claude skills (MIT)
+URL: {{ site.url }}/skills/
+Skills for support teams are being prepared for public release.{% for s in site.skills %}
+- {{ s.title }}: {{ s.description }} {{ s.url | absolute_url }}{% endfor %}
+
+## Trail Log
+{% for doc in site.trail %}
+### {{ doc.title }} ({{ doc.date | date: "%Y-%m-%d" }})
+URL: {{ doc.url | absolute_url }}
+{{ doc.content | strip_html | normalize_whitespace }}
+{% endfor %}
+## Elsewhere
+- LinkedIn: {{ p.links.linkedin }}
+- GitHub: {{ p.links.github }}
+- SCORE mentor profile: {{ p.links.score }}
