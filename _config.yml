@@ -4,6 +4,7 @@ url: https://andrewdell.github.io
 baseurl: ""
 lang: en
 timezone: America/New_York
+logo: /assets/og/default.png
 author:
   name: Andrew Dell
 social:
@@ -30,7 +31,7 @@ collections:
     permalink: /trail-log/:name/
 defaults:
   - scope: { path: "" }
-    values: { layout: default }
+    values: { layout: default, image: /assets/og/default.png }
   - scope: { path: "", type: playbooks }
     values: { layout: article, schema_type: Article }
   - scope: { path: "", type: trail }
