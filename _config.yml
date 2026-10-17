@@ -37,4 +37,4 @@ defaults:
     values: { layout: article, schema_type: Article }
   - scope: { path: "", type: posts }
     values: { layout: article, schema_type: Article }
-exclude: [README.md, Gemfile, Gemfile.lock, vendor, .github, tools]
+exclude: [README.md, GATES.md, Gemfile, Gemfile.lock, vendor, .github, tools]
