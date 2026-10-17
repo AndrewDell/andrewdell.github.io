@@ -1,0 +1,5 @@
+# Past items only. Add url once the exact public link is confirmed; items without url render as text.
+- { date: 2026-07, kind: Webinar, title: "Full Coverage, Not Full Automation", host: "CX Network", detail: "Presented with Botpress co-founder Sylvain Perron", url: "" }
+- { date: 2026, kind: Customer story, title: "Botpress customer story", host: "Botpress", detail: "Production LLM agents in support", url: "" }
+- { date: 2026, kind: Podcast, title: "Modern Customer Podcast", host: "Modern Customer", detail: "Guest episode on AI in support", url: "" }
+- { date: 2025-04, kind: Volunteer, title: "SCORE mentor profile", host: "SCORE Jacksonville", detail: "Small-business mentor and webinar host coordinator", url: "https://www.score.org/fl/jacksonville/mentors/andrew-dell/" }

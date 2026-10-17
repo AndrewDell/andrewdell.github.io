@@ -1,0 +1,8 @@
+<nav class="site-nav" aria-label="Main">
+  <ul>
+    {%- assign items = "Playbooks:/playbooks/|Claude Skills:/skills/|Writing:/writing/|Talks & Mentions:/talks/|About:/about/|Trail Log:/trail-log/" | split: "|" -%}
+    {%- for it in items -%}{%- assign kv = it | split: ":" -%}
+    <li><a href="{{ kv[1] | relative_url }}"{% if page.url == kv[1] %} aria-current="page"{% endif %}>{{ kv[0] }}</a></li>
+    {%- endfor -%}
+  </ul>
+</nav>

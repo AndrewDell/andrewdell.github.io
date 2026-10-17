@@ -1,0 +1,23 @@
+# Every fact here traces to context/fact_bank.md in the LinkedIn workspace.
+name: Andrew Dell
+job_title: Support Operations Architect
+one_liner: I run AI-assisted customer support operations, from Intercom Fin to Zendesk AI to Botpress, and share what works.
+location: Saint Augustine, FL (remote)
+tagline: Support ops architect. SCORE mentor. Trail host.
+knows_about: [Customer support operations, Conversational AI, Intercom Fin, Zendesk AI, Botpress, Zendesk administration, Knowledge management, n8n automation, Telephony and caller ID trust, AI agent handoff]
+links:
+  linkedin: https://www.linkedin.com/in/andrew-p-dell
+  github: https://github.com/AndrewDell
+  score: https://www.score.org/fl/jacksonville/mentors/andrew-dell/
+at_a_glance:
+  - { label: Role, value: "Support Operations Architect (since Oct 2023)" }
+  - { label: Scale, value: "About 120,000 support tickets a year across chat, email, voice and self-serve" }
+  - { label: AI in production, value: "Three generations: Intercom Fin, Zendesk AI, Botpress LLM agents" }
+  - { label: Tools, value: "Zendesk, Botpress, Intercom, n8n, Salesforce, Jira, Twilio, Claude" }
+  - { label: Volunteer, value: "SCORE mentor (Jacksonville) and webinar host coordinator" }
+  - { label: Location, value: "Saint Augustine, FL, working remote" }
+results:
+  - { number: "21% to 66%", label: "AI resolution after moving to Botpress LLM agents, at $0.67 per conversation" }
+  - { number: "100%", label: "Conversation coverage across three product platforms (AI plus human)" }
+  - { number: "1,239 to 159 min", label: "Fraud case resolution time after automating intake and routing" }
+  - { number: "45 / 26 / 10", label: "Feature requests, root-caused bugs and confirmed fixes in one quarter from a Zendesk and Jira loop" }

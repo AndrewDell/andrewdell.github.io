@@ -1,0 +1,21 @@
+{%- assign p = site.data.profile -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": "{{ site.url }}/#profilepage",
+  "url": "{{ site.url }}/",
+  "dateModified": "{{ page.last_modified_at | default: site.time | date_to_xmlschema }}",
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "{{ site.url }}/#person",
+    "name": "{{ p.name }}",
+    "jobTitle": "{{ p.job_title }}",
+    "description": {{ p.one_liner | jsonify }},
+    "url": "{{ site.url }}/",
+    "address": { "@type": "PostalAddress", "addressLocality": "Saint Augustine", "addressRegion": "FL", "addressCountry": "US" },
+    "knowsAbout": {{ p.knows_about | jsonify }},
+    "sameAs": [{% for l in p.links %}"{{ l[1] }}"{% unless forloop.last %}, {% endunless %}{% endfor %}]
+  }
+}
+</script>

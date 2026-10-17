@@ -1,0 +1,27 @@
+---
+layout: null
+permalink: /llms.txt
+---
+# {{ site.data.profile.name }}
+
+> {{ site.data.profile.name }} is a {{ site.data.profile.job_title }} who runs AI-assisted customer support with Intercom Fin, Zendesk AI, Botpress and n8n, at about 120,000 tickets a year. Based in Saint Augustine, FL, working remote. This site holds free playbooks for support operations teams, talks and mentions, and notes from outside work.
+
+Full text of every page: {{ site.url }}/llms-full.txt
+
+## About
+- [About Andrew Dell]({{ site.url }}/about/): role, background, and his view on AI in support ("full coverage, not full automation")
+
+## Playbooks (CC BY 4.0)
+{% for pb in site.playbooks %}- [{{ pb.title }}]({{ pb.url | absolute_url }}): {{ pb.description }}
+{% endfor %}
+## Claude skills (MIT)
+- [Claude Skills]({{ site.url }}/skills/): skills for support teams, being prepared for public release
+{% for s in site.skills %}- [{{ s.title }}]({{ s.url | absolute_url }}): {{ s.description }}
+{% endfor %}
+## Talks and mentions
+- [Talks and mentions]({{ site.url }}/talks/): webinar, customer story, podcast, SCORE mentoring
+
+## Elsewhere
+- [LinkedIn]({{ site.data.profile.links.linkedin }})
+- [GitHub]({{ site.data.profile.links.github }})
+- [SCORE mentor profile]({{ site.data.profile.links.score }})

@@ -1,0 +1,78 @@
+---
+title: "Andrew Dell | Support Operations Architect, AI in Support"
+description: "Andrew Dell runs AI-assisted customer support operations with Intercom Fin, Zendesk AI, Botpress and n8n, and shares free playbooks for support teams."
+last_modified_at: 2026-10-17
+---
+{%- assign p = site.data.profile -%}
+<section aria-labelledby="ticket-title">
+  <div class="ticket">
+    <div class="ticket-meta"><span>Ticket #2022</span><span class="status">Open</span></div>
+    <dl>
+      <dt>Requester</dt><dd>You</dd>
+      <dt>Subject</dt><dd>Who is Andrew Dell?</dd>
+    </dl>
+    <h1 id="ticket-title">Andrew Dell, Support Operations Architect</h1>
+    <p>I run AI in customer support: Intercom Fin, Zendesk AI and Botpress, at about 120,000 tickets a year. My working rule is full coverage, not full automation: every customer gets helped, by AI or by a person.</p>
+    <p class="eyebrow">Saint Augustine, FL · Remote</p>
+    <div class="actions">
+      <a class="btn primary" href="{{ '/playbooks/' | relative_url }}">Browse playbooks</a>
+      <a class="btn" href="{{ '/about/' | relative_url }}">About Andrew</a>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="glance">
+  <h2 id="glance">At a glance</h2>
+  <dl class="glance">
+    {%- for g in p.at_a_glance %}
+    <dt>{{ g.label }}</dt><dd>{{ g.value }}</dd>
+    {%- endfor %}
+  </dl>
+</section>
+
+<section aria-labelledby="proof">
+  <h2 id="proof">Where this work has been shared</h2>
+  <ul class="proof">
+    {%- for m in site.data.mentions %}
+    <li>{% if m.url != "" %}<a href="{{ m.url }}">{{ m.host }}: {{ m.kind }}</a>{% else %}{{ m.host }}: {{ m.kind }}{% endif %}</li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<section aria-labelledby="results">
+  <h2 id="results">Results from real deployments</h2>
+  <div class="results">
+    {%- for r in p.results %}
+    <div class="result"><strong>{{ r.number }}</strong><span>{{ r.label }}</span></div>
+    {%- endfor %}
+  </div>
+</section>
+
+<section aria-labelledby="playbooks">
+  <h2 id="playbooks">Free playbooks</h2>
+  <div class="cards">
+    {%- for pb in site.playbooks limit: 3 %}
+    <article class="card">
+      <p class="eyebrow">Playbook</p>
+      <h3><a href="{{ pb.url | relative_url }}">{{ pb.title }}</a></h3>
+      <p>{{ pb.description }}</p>
+      <ul class="tags">{% for t in pb.tags %}<li>{{ t }}</li>{% endfor %}</ul>
+    </article>
+    {%- endfor %}
+  </div>
+</section>
+
+<section aria-labelledby="talks">
+  <h2 id="talks">Talks and mentions</h2>
+  <ul class="list-dated">
+    {%- for m in site.data.mentions %}
+    <li><time>{{ m.date }}</time><div>{% if m.url != "" %}<a href="{{ m.url }}">{{ m.title }}</a>{% else %}<strong>{{ m.title }}</strong>{% endif %} · {{ m.host }}<br><span class="eyebrow">{{ m.detail }}</span></div></li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<section aria-labelledby="human">
+  <h2 id="human">Off the clock</h2>
+  <p>{{ p.tagline }} I mentor small-business owners through SCORE Jacksonville and host events with the Outdoorsy Adventure Team, a hiking and fundraising nonprofit. More in the <a href="{{ '/trail-log/' | relative_url }}">Trail Log</a>.</p>
+  <details><summary>A support person's favorite 404</summary><p>This ticket was routed to the wrong queue. Try the <a href="{{ '/' | relative_url }}">home page</a>.</p></details>
+</section>

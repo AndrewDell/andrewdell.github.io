@@ -1,0 +1,13 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{{ page.schema_type | default: 'Article' }}",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "url": "{{ page.url | absolute_url }}",
+  "datePublished": "{{ page.date | default: page.last_modified_at | date_to_xmlschema }}",
+  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+  "author": { "@id": "{{ site.url }}/#person", "@type": "Person", "name": "Andrew Dell" }{% if page.license %},
+  "license": "https://creativecommons.org/licenses/by/4.0/"{% endif %}
+}
+</script>

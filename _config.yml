@@ -1,0 +1,40 @@
+title: Andrew Dell
+description: Andrew Dell is a Support Operations Architect who runs AI-assisted customer support with Intercom Fin, Zendesk AI, Botpress and n8n.
+url: https://andrewdell.github.io
+baseurl: ""
+lang: en
+timezone: America/New_York
+author:
+  name: Andrew Dell
+social:
+  name: Andrew Dell
+  links:
+    - https://www.linkedin.com/in/andrew-p-dell
+    - https://github.com/AndrewDell
+    - https://www.score.org/fl/jacksonville/mentors/andrew-dell/
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-redirect-from
+permalink: /writing/:title/
+collections:
+  playbooks:
+    output: true
+    permalink: /playbooks/:name/
+  skills:
+    output: true
+    permalink: /skills/:name/
+  trail:
+    output: true
+    permalink: /trail-log/:name/
+defaults:
+  - scope: { path: "" }
+    values: { layout: default }
+  - scope: { path: "", type: playbooks }
+    values: { layout: article, schema_type: Article }
+  - scope: { path: "", type: trail }
+    values: { layout: article, schema_type: Article }
+  - scope: { path: "", type: posts }
+    values: { layout: article, schema_type: Article }
+exclude: [README.md, Gemfile, Gemfile.lock, vendor, .github, tools]

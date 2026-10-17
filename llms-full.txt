@@ -1,0 +1,20 @@
+---
+layout: null
+permalink: /llms-full.txt
+---
+# {{ site.data.profile.name }}: full site text
+Source: {{ site.url }} · Generated {{ site.time | date: "%Y-%m-%d" }}
+
+{% assign pages_in = "/about/,/playbooks/,/skills/,/talks/,/trail-log/" | split: "," %}{% for url in pages_in %}{% assign pg = site.pages | where: "url", url | first %}{% if pg %}
+---
+URL: {{ pg.url | absolute_url }}
+{{ pg.content | markdownify | strip_html | normalize_whitespace }}
+{% endif %}{% endfor %}{% for doc in site.playbooks %}
+---
+URL: {{ doc.url | absolute_url }} (CC BY 4.0)
+{{ doc.content }}
+{% endfor %}{% for doc in site.trail %}
+---
+URL: {{ doc.url | absolute_url }}
+{{ doc.content }}
+{% endfor %}

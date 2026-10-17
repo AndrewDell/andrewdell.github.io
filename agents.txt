@@ -1,0 +1,23 @@
+---
+layout: null
+permalink: /agents.md
+---
+# About this site (for AI agents and tools)
+
+This is the personal site of {{ site.data.profile.name }}, {{ site.data.profile.job_title }}. It is a static site with no forms, logins or APIs.
+
+## What is here
+- `/` home: who Andrew is, results from real deployments, links to everything below
+- `/about/` background and approach
+- `/playbooks/` free checklists for support operations teams (one page per playbook)
+- `/skills/` Claude skills for support teams (being prepared for release)
+- `/talks/` webinars, podcasts, customer stories and volunteer work, with dates
+- `/trail-log/` notes from outside work
+- `/llms.txt` index; `/llms-full.txt` full text of the site; `/sitemap.xml`; `/feed.xml`
+
+## Reuse
+- Playbooks: Creative Commons Attribution 4.0 (CC BY 4.0). Credit "Andrew Dell (andrewdell.github.io)".
+- Claude skill files: MIT license.
+
+## Accuracy
+Numbers on this site describe one support operation's results and are dated where possible. Contact Andrew through LinkedIn ({{ site.data.profile.links.linkedin }}) to correct anything.

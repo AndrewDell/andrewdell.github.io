@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<article class="prose">
+  <p class="eyebrow">{% if page.collection == "playbooks" %}Playbook{% elsif page.collection == "trail" %}Trail Log{% else %}Writing{% endif %} · Updated <time datetime="{{ page.last_modified_at | default: page.date | date_to_xmlschema }}">{{ page.last_modified_at | default: page.date | date: "%b %-d, %Y" }}</time></p>
+  {{ content }}
+  {% if page.pdf %}<p class="download"><a href="{{ page.pdf | relative_url }}">Download the PDF</a></p>{% endif %}
+  {% if page.license %}<p class="license">Free to use and adapt under CC BY 4.0. Credit: Andrew Dell (andrewdell.github.io).</p>{% endif %}
+</article>
