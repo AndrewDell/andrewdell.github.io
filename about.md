@@ -5,7 +5,7 @@ last_modified_at: 2026-10-17
 ---
 # About Andrew Dell
 
-Andrew Dell is a Support Operations Architect who runs AI-assisted customer support with Intercom Fin, Zendesk AI, Botpress and n8n, at about 120,000 tickets a year. He works remote from Saint Augustine, FL.
+Andrew Dell is a Support Operations Architect who runs AI-assisted customer support with Intercom Fin, Zendesk AI, Botpress and n8n for a high-volume support operation. He works remote from Saint Augustine, FL.
 
 ## What I do
 

@@ -4,7 +4,7 @@ permalink: /llms.txt
 ---
 # {{ site.data.profile.name }}
 
-> {{ site.data.profile.name }} is a {{ site.data.profile.job_title }} who runs AI-assisted customer support with Intercom Fin, Zendesk AI, Botpress and n8n, at about 120,000 tickets a year. Based in Saint Augustine, FL, working remote. This site holds free playbooks for support operations teams, talks and mentions, and notes from outside work.
+> {{ site.data.profile.name }} is a {{ site.data.profile.job_title }} who runs AI-assisted customer support with Intercom Fin, Zendesk AI, Botpress and n8n for a high-volume support operation. Based in Saint Augustine, FL, working remote. This site holds free playbooks for support operations teams, talks and mentions, and notes from outside work.
 
 Full text of every page: {{ site.url }}/llms-full.txt
 

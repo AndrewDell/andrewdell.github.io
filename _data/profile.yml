@@ -13,13 +13,13 @@ links:
   podcast: https://youtu.be/ED99e5J2Aw4
 at_a_glance:
   - { label: Role, value: "Support Operations Architect (since Oct 2023)" }
-  - { label: Scale, value: "About 120,000 support tickets a year across chat, email, voice and self-serve" }
+  - { label: Scale, value: "High-volume support across chat, email, voice and self-serve" }
   - { label: AI in production, value: "Three generations: Intercom Fin, Zendesk AI, Botpress LLM agents" }
   - { label: Tools, value: "Zendesk, Botpress, Intercom, n8n, Salesforce, Jira, Twilio, Claude" }
   - { label: Volunteer, value: "SCORE mentor (Jacksonville) and webinar host coordinator" }
   - { label: Location, value: "Saint Augustine, FL, working remote" }
 results:
-  - { number: "21% to 66%", label: "AI resolution after moving to Botpress LLM agents, at $0.67 per conversation" }
+  - { number: "21% to 66%", label: "AI resolution after moving to Botpress LLM agents" }
   - { number: "100%", label: "Conversation coverage across three product platforms (AI plus human)" }
-  - { number: "1,239 to 159 min", label: "Fraud case resolution time after automating intake and routing" }
-  - { number: "45 / 26 / 10", label: "Feature requests, root-caused bugs and confirmed fixes in one quarter from a Zendesk and Jira loop" }
+  - { number: "87% faster", label: "Fraud case resolution after automating intake and routing" }
+  - { number: "99.5%", label: "One-touch rate on AI conversations in Q1 2026" }

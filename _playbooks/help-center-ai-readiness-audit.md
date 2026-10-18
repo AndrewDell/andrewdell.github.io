@@ -18,7 +18,7 @@ license: CC BY 4.0
 
 When a bot answers badly, the quick fix is to rewrite its instructions. Often the real problem is what it can find.
 
-From Andrew's work: after an Intercom to Zendesk migration, AI answer quality dropped because the old knowledge base structure did not translate to the new platform. Prompt tuning alone did not fix it. Rebuilding retrieval did: 123 Help Center articles, 118 snippets, 19 custom answers and 300+ internal articles (one company's migration in a 22-seat environment across seven functions; your results will vary).
+From Andrew's work: after an Intercom to Zendesk migration, AI answer quality dropped because the old knowledge base structure did not translate to the new platform. Prompt tuning alone did not fix it. Rebuilding retrieval did: help center articles, snippets, custom answers and internal articles, all restructured so the AI could find the right source (one company's migration; your results will vary).
 
 The lesson that carries over: check what the bot retrieves for a failing question before you change what it's told.
 
