@@ -8,7 +8,7 @@ import { execFileSync } from "node:child_process";
 const site = path.resolve("_site");
 const checker = "C:/Users/Andrew/Documents/LinkedIn/tools/check_text.mjs";
 const pages = [];
-(function walk(d) { for (const f of fs.readdirSync(d)) { const p = path.join(d, f); fs.statSync(p).isDirectory() ? walk(p) : p.endsWith(".html") && pages.push(p); } })(site);
+(function walk(d) { for (const f of fs.readdirSync(d)) { const p = path.join(d, f); fs.statSync(p).isDirectory() ? walk(p) : p.endsWith(".html") && !/[/]google[0-9a-f]+.html$/.test(p) && pages.push(p); } })(site);
 
 const rows = [];
 let fail = 0;
