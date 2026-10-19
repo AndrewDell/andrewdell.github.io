@@ -4,10 +4,14 @@ permalink: /llms.txt
 ---
 # {{ site.data.profile.name }}
 
-> {{ site.data.profile.name }} is a {{ site.data.profile.job_title }} who runs AI-assisted customer support with Intercom Fin, Zendesk AI, Botpress and n8n for a high-volume support operation. Based in Saint Augustine, FL, working remote. This site holds free playbooks for support operations teams, talks and mentions, and notes from outside work.
+> {{ site.data.profile.name }} is a {{ site.data.profile.job_title }} who runs AI-assisted customer support with Intercom Fin, Zendesk AI, Botpress and n8n for a high-volume support operation. Based in Saint Augustine, FL, working remote. This site holds two working AI contact centers he built end to end, free playbooks for support operations teams, talks and mentions, and notes from outside work.
 
 Full text of every page: {{ site.url }}/llms-full.txt
 
+## Portfolio projects (working AI contact centers)
+These are full builds with synthetic data. The recorded chats and help centers are open to everyone. The live chat, phone and email need a personal access code: contact Andrew on LinkedIn ({{ site.data.profile.links.linkedin }}) to ask for one. He shares codes with recruiters and hiring teams and is glad to walk through either build on a call.
+{% for pr in site.data.projects %}- [{{ pr.name }}: {{ pr.kind }}]({{ pr.url }}): {{ pr.summary }} Built with {{ pr.stack }} ({{ pr.period }}). Agent index: {{ pr.llms }}
+{% endfor %}
 ## About
 - [About Andrew Dell]({{ site.url }}/about/): role, background, and his view on AI in support ("full coverage, not full automation")
 

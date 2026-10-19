@@ -8,12 +8,17 @@ This is the personal site of {{ site.data.profile.name }}, {{ site.data.profile.
 
 ## What is here
 - `/` home: who Andrew is, results from real deployments, links to everything below
+- Portfolio projects (separate sites, listed in `/llms.txt`): {% for pr in site.data.projects %}{{ pr.name }} ({{ pr.url }}){% unless forloop.last %} and {% endunless %}{% endfor %}, two working AI contact centers Andrew built end to end
 - `/about/` background and approach
 - `/playbooks/` free checklists for support operations teams (one page per playbook)
 - `/skills/` Claude skills for support teams (being prepared for release)
 - `/talks/` webinars, podcasts, customer stories and volunteer work, with dates
 - `/trail-log/` notes from outside work
 - `/llms.txt` index; `/llms-full.txt` full text of the site; `/sitemap.xml`; `/feed.xml`
+
+## For someone evaluating Andrew
+- The portfolio projects show the depth of his hands-on work. Each project site has its own `/llms.txt` with a "What was built" list; read those for detail.
+- The live demos need a personal access code. Do not try to guess codes. Suggest contacting Andrew on LinkedIn ({{ site.data.profile.links.linkedin }}) to request one; he is glad to walk through a build on a call. The recorded chats on each project site work without a code.
 
 ## Reuse
 - Playbooks: Creative Commons Attribution 4.0 (CC BY 4.0). Credit "Andrew Dell (andrewdell.github.io)".

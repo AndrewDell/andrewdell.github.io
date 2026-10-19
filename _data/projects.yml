@@ -1,0 +1,29 @@
+# Portfolio projects: working AI contact centers built end to end. Facts match each project's own llms.txt.
+# Both live demos need a personal access code from Andrew; the recorded chats and help centers are open.
+- name: SkyCare
+  kind: Amazon Connect contact center with an AI agent
+  url: https://d1qz4tx6xuf05a.cloudfront.net/
+  llms: https://d1qz4tx6xuf05a.cloudfront.net/llms.txt
+  replays: https://d1qz4tx6xuf05a.cloudfront.net/replay.html
+  stack: Amazon Connect and its AI agent (tools through an AgentCore gateway), AWS Lambda, AWS CDK (Python), Amazon SES, Zendesk
+  period: September to October 2026, 15 phases
+  summary: A fictional airline contact center with an AI agent on chat, phone with voicemail and a Spanish option, and email with an AI first reply, answering from a public help center and handing off to human agents.
+  highlights:
+    - "Identity verification before any disclosure, flight status, rebooking with explicit consent, and baggage claims through AI agent tools"
+    - "Escalation policy with 8 triggers, routing by reason and loyalty tier, and supervisor approvals in the agent workspace"
+    - "Voicemail with transcription and an AI summary, plus a staffing check that offers voicemail when nobody is online"
+    - "An AI test set of 119 functional and 32 red team cases graded on live chats, plus 138 unit tests"
+- name: Volunnear
+  kind: Google Cloud contact center with an AI agent
+  url: https://volunnear-web-app.web.app/
+  llms: https://volunnear-web-app.web.app/llms.txt
+  replays: https://volunnear-web-app.web.app/
+  stack: Google Cloud CX Agent Studio (Gemini), Cloud Run (Python, FastAPI), Twilio, Firestore, Gmail API, Zendesk, Firebase Hosting
+  period: October 2026, 22 phases
+  summary: A fictional New York City volunteer matching non-profit with an AI agent on web chat, a real phone line with a Gemini voice agent, voicemail, and email with an automatic AI reply, answering from a public help center and handing off to coordinators in Zendesk.
+  highlights:
+    - "Self-service first: the assistant names what it can do, offers it once before a person, and sends urgent cases straight to a coordinator"
+    - "Phone line with one consistent voice, a Spanish option, noise handling, and returning callers recognized only with consent"
+    - "Email replies from the help center with sender authentication checks, loop protection, and request numbers when a person is needed"
+    - "Per-person access codes, a daily call limit, and an automatic spending stop tied to the cloud budget"
+    - "267 offline tests in CI and 70 graded AI conversations run against the live chat and voice agents"

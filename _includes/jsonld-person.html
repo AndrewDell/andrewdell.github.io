@@ -19,3 +19,19 @@
   }
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [{% for pr in site.data.projects %}
+    {
+      "@type": "WebApplication",
+      "name": {{ pr.name | append: ": " | append: pr.kind | jsonify }},
+      "url": "{{ pr.url }}",
+      "description": {{ pr.summary | jsonify }},
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "creator": { "@id": "{{ site.url }}/#person" }
+    }{% unless forloop.last %},{% endunless %}{% endfor %}
+  ]
+}
+</script>

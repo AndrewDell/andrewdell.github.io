@@ -15,6 +15,17 @@ Source: {{ site.url }} · Generated {{ site.time | date: "%Y-%m-%d" }}
 ## Results from real deployments
 {% for r in p.results %}- {{ r.number }}: {{ r.label }}
 {% endfor %}
+## Portfolio projects (working AI contact centers)
+The live chat, phone and email need a personal access code from Andrew (ask on LinkedIn: {{ p.links.linkedin }}). The recorded chats and help centers are open.
+{% for pr in site.data.projects %}
+### {{ pr.name }}: {{ pr.kind }}
+URL: {{ pr.url }}
+Agent index: {{ pr.llms }}
+Recorded chats, no code needed: {{ pr.replays }}
+{{ pr.summary }}
+Built with: {{ pr.stack }}. Period: {{ pr.period }}.
+{% for h in pr.highlights %}- {{ h }}
+{% endfor %}{% endfor %}
 ## About
 URL: {{ site.url }}/about/
 {% assign about = site.pages | where: "url", "/about/" | first %}{{ about.content | markdownify | strip_html | normalize_whitespace }}
